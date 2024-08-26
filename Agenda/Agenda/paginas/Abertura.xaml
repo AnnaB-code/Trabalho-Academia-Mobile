@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Agenda.paginas.Abertura"
+             BackgroundImageSource="fundo.png">
+    <ContentPage.Content>
+        <StackLayout Padding="100" VerticalOptions="Center" HorizontalOptions="Center">
+            <Image Source="academia.png" WidthRequest="900"
+                VerticalOptions="CenterAndExpand"
+                HorizontalOptions="CenterAndExpand" />
+            <Image Source="mulheracademia.png" WidthRequest="500"
+                VerticalOptions="CenterAndExpand"
+                HorizontalOptions="CenterAndExpand" />
+            <Label Text="Desenvolvido por: Anna Beatriz, Allicia Bonna e Maria Flavia" FontSize="Medium" FontFamily="MyAwesomeCustomFont"
+    TextColor="#363636" VerticalOptions="Center" HorizontalOptions="CenterAndExpand"/>
+        </StackLayout>
+    </ContentPage.Content>
+
+</ContentPage>

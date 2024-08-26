@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Agenda.paginas.pesquisar"
+             BackgroundImageSource="fundo.png">
+    <ContentPage.Content>
+        <StackLayout>
+            <Image Source="pesquisar.png" HorizontalOptions="CenterAndExpand" 
+                       HeightRequest="400" VerticalOptions="CenterAndExpand"/>
+            <Label Text="Pesquisa de Alunos"  FontFamily="Times new roman"
+            VerticalOptions="Center"
+            HorizontalOptions="CenterAndExpand"
+            FontSize="Header"
+            TextColor="#025a03"/>
+            <Entry x:Name="txtPesquisar" Placeholder="Digite o nome:" HorizontalOptions="CenterAndExpand" WidthRequest="500"/>
+            <Button Text="Pesquisar" x:Name="btn_pesquisar"
+                FontSize="Medium"
+                TextColor="Black" VerticalOptions="CenterAndExpand"
+                HorizontalOptions="CenterAndExpand" CornerRadius="20"/>
+            <ListView x:Name="ls_alunos">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <StackLayout Orientation="Horizontal">
+                                <Label Text="{Binding Nome}" FontSize="Medium" TextColor="Black" HorizontalOptions="CenterAndExpand" WidthRequest="900"/>
+                                <Label Text=" - " />
+                                <Label Text="{Binding Ende}" FontSize="Medium" TextColor="Black" HorizontalOptions="CenterAndExpand" WidthRequest="900"/>
+                                <Label Text=" - " />
+                                <Label Text="{Binding Fone}" FontSize="Medium" TextColor="Black" HorizontalOptions="CenterAndExpand" WidthRequest="900"/>
+                                <Label Text=" - " />
+                                <Label Text="{Binding Idade}" FontSize="Medium" TextColor="Black" HorizontalOptions="CenterAndExpand" WidthRequest="900"/>
+                            </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

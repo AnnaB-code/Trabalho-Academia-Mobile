@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Agenda.paginas.lista"
+             BackgroundImageSource="fundo.png">
+    <ContentPage.Content>
+        <StackLayout>
+            <Image Source="lista.png" HorizontalOptions="CenterAndExpand" 
+                       HeightRequest="400" VerticalOptions="CenterAndExpand"/>
+            <Label Text="Listagem de Alunos" FontFamily="Times new roman"    
+                VerticalOptions="Center"
+                HorizontalOptions="CenterAndExpand"
+                FontSize="Header"
+                TextColor="White"/>
+            <Button Text="Recarregar" x:Name="btn_recarregar"
+                    FontSize="Large" TextColor="Black" HorizontalOptions="CenterAndExpand" WidthRequest="900" CornerRadius="20"/>
+            <ListView x:Name="ls_alunos">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <StackLayout Orientation="Horizontal">
+                                <Label Text="{Binding Nome}" FontSize="Medium" TextColor="White" HorizontalOptions="CenterAndExpand" WidthRequest="900"/>
+                                <Label Text=" - " />
+                                <Label Text="{Binding Ende}" FontSize="Medium" TextColor="White" HorizontalOptions="CenterAndExpand" WidthRequest="900"/>
+                                <Label Text=" - " />
+                                <Label Text="{Binding Fone}" FontSize="Medium" TextColor="White" HorizontalOptions="CenterAndExpand" WidthRequest="900"/>
+                                <Label Text=" - " />
+                                <Label Text="{Binding Idade}" FontSize="Medium" TextColor="White" HorizontalOptions="CenterAndExpand" WidthRequest="900"/>
+                                <Label Text=" - " />
+                                <Label Text="{Binding Cpf}" FontSize="Medium" TextColor="White" HorizontalOptions="CenterAndExpand" WidthRequest="900"/>
+                                <Label Text=" - " />
+                                <Label Text="{Binding Peso}" FontSize="Medium" TextColor="White" HorizontalOptions="CenterAndExpand" WidthRequest="900"/>
+                            </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+
+        </StackLayout>
+
+    </ContentPage.Content>
+</ContentPage>

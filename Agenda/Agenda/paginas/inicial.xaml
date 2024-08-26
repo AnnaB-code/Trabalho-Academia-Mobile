@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Agenda.paginas.inicial"
+             BackgroundImageSource="fundo.png">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout>
+                <Image Source="ginastica.png" HorizontalOptions="CenterAndExpand" WidthRequest="300" 
+                       HeightRequest="200" VerticalOptions="CenterAndExpand"/>
+            <Label Text="Inclusão de Alunos" FontFamily="Times new roman"    
+                VerticalOptions="Center"
+                HorizontalOptions="CenterAndExpand"
+                FontSize="Header"
+                TextColor="#df1681"/>
+            <Label Text="Nome: " FontSize="Medium"
+                TextColor="#7a0041" HorizontalOptions="CenterAndExpand" WidthRequest="900"/>
+                <Entry x:Name="txt_nome"  FontSize="Medium" HorizontalOptions="CenterAndExpand" WidthRequest="900"/>
+            <Label Text="Endereço: " FontSize="Medium"
+                TextColor="#7a0041" HorizontalOptions="CenterAndExpand" WidthRequest="900"/>
+                <Entry x:Name="txt_ende" FontSize="Medium" HorizontalOptions="CenterAndExpand" WidthRequest="900"/>
+                <Label Text="Fone: " FontSize="Medium" HorizontalOptions="CenterAndExpand" WidthRequest="900"
+                TextColor="#7a0041"/>
+                <Entry x:Name="txt_fone" FontSize="Medium" HorizontalOptions="CenterAndExpand" 
+                       WidthRequest="900"/>
+            <Label Text="Idade: " FontSize="Medium"
+                TextColor="#7a0041" HorizontalOptions="CenterAndExpand" WidthRequest="900"/>
+                <Entry x:Name="txt_idade" FontSize="Medium" HorizontalOptions="CenterAndExpand" 
+                       WidthRequest="900"/>
+                <Label Text="CPF: " FontSize="Medium" HorizontalOptions="CenterAndExpand" 
+                       WidthRequest="900" TextColor="#7a0041"/>
+                <Entry x:Name="txt_cpf"  FontSize="Medium" WidthRequest="900"
+                HorizontalOptions="CenterAndExpand"/>
+            <Label Text="Peso: " FontSize="Medium"
+                TextColor="#7a0041" HorizontalOptions="CenterAndExpand" WidthRequest="900"/>
+                <Entry x:Name="txt_peso"  FontSize="Medium" HorizontalOptions="CenterAndExpand" WidthRequest="900"/>
+                <Button Text="Enviar" x:Name="btn_enviar" FontSize="Medium"
+                TextColor="Black" VerticalOptions="CenterAndExpand"
+                HorizontalOptions="CenterAndExpand" CornerRadius="20"/>
+        </StackLayout>
+    </ScrollView>
+    </ContentPage.Content>
+</ContentPage>
